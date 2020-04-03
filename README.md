@@ -26,15 +26,15 @@ Clone the project:
 git clone https://github.com/DFE-Digital/git-apprentice-project.git
 ```
 
-Navigate to `./git-apprentice-project` and install the dependencies for the react app:
+Navigate to `./git-apprentice-project` and install the dependencies for the Gatsby app:
 
 ```js
 npm install
 ```
 
-## Run the react app 
+## Run the Gatsby app 
 
-Run the react app from the command line. Navigate to `./git-apprentice-project`:
+Run the Gatsby app from the command line. Navigate to `./git-apprentice-project`:
 
 ```js
 npm start
