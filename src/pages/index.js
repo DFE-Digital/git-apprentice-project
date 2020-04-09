@@ -11,16 +11,17 @@ export default () => (
       <img
         src={inspireTheNextGeneration}
         alt="Inspire the next generation"
-        className={indexStyles.inspireImage}
+        id={indexStyles.inspireImageLarge}
       />
     </div>
-    <Link to="/life-as-a-teacher/">
-      <img
-        src={inspireTheNextGenerationSmall}
-        alt="Inspire the next generation"
-        className={indexStyles.inspireImageSmall}
-      />
-    </Link>
+    <div id={indexStyles.inspireImageSmallContainer}>
+      <Link to="/life-as-a-teacher/" id={indexStyles.anchorLifeAsATeacherSmall}>
+        <img
+          src={inspireTheNextGenerationSmall}
+          alt="Inspire the next generation"
+        />
+      </Link>
+    </div>
     <button className={indexStyles.findEventsButton}>Find Events</button>
   </div>
 );

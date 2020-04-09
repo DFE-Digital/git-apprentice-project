@@ -6,13 +6,18 @@
 }
 
 // INSPIRE THE NEXT GENERATION IMAGE
-.inspireImage {
+#inspireImageLarge {
   width: 100%;
   display: block;
 }
 
-.inspireImageSmall {
-  display: block;
+#inspireImageSmallContainer {
+  display: flex;
+  margin: auto;
+}
+
+#anchorLifeAsATeacherSmall {
+  margin: auto;
 }
 
 #inspireImageLargeContainer {
@@ -28,15 +33,13 @@
 }
 
 @media only screen and (max-width: $size-small) {
-  .inspireImage,
-  #inspireImageLargeContainer,
-  #anchorLifeAsATeacher {
+  #inspireImageLargeContainer {
     display: none;
   }
 }
 
 @media only screen and (min-width: $size-small) {
-  .inspireImageSmall {
+  #inspireImageSmallContainer {
     display: none;
   }
 }
