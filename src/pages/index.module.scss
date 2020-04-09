@@ -1,16 +1,13 @@
 @import "../utils/constants.scss";
 
 .container {
-  max-width: 1200;
-  margin: "auto";
+  max-width: 1200px;
+  margin: auto;
 }
 
 // INSPIRE THE NEXT GENERATION IMAGE
 .inspireImage {
   width: 100%;
-}
-
-.inspireImage {
   display: block;
 }
 
@@ -18,8 +15,22 @@
   display: block;
 }
 
+#inspireImageLargeContainer {
+  position: relative;
+}
+
+#anchorLifeAsATeacher {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
 @media only screen and (max-width: $size-small) {
-  .inspireImage {
+  .inspireImage,
+  #inspireImageLargeContainer,
+  #anchorLifeAsATeacher {
     display: none;
   }
 }
