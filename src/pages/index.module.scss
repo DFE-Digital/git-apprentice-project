@@ -1,0 +1,36 @@
+@import "../utils/constants.scss";
+
+.container {
+  max-width: 1200;
+  margin: "auto";
+}
+
+// INSPIRE THE NEXT GENERATION IMAGE
+.inspireImage {
+  width: 100%;
+}
+
+.inspireImage {
+  display: block;
+}
+
+.inspireImageSmall {
+  display: block;
+}
+
+@media only screen and (max-width: $size-small) {
+  .inspireImage {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $size-small) {
+  .inspireImageSmall {
+    display: none;
+  }
+}
+
+// FIND EVENTS
+.findEventsButton {
+  background-color: black;
+}
