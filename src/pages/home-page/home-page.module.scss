@@ -46,14 +46,14 @@
 
 // HOW I BECAME A TEACHER
 #howIBecameATeacherContainer {
-  background-color: black; //TODO: switch to constant
+  background-color: $git-black;
 }
 
 #howIBecameATeacherText {
-  color: white; //TODO: make constant colour
+  color: $git-white;
 }
 
 #howIBecameATeacherAnchor {
-  color: white;
+  color: $git-white;
   text-decoration: none;
 }

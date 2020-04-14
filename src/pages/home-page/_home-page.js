@@ -42,8 +42,7 @@ export default () => (
         to="/life-as-a-teacher/stories/"
         id={styles.howIBecameATeacherAnchor}
       >
-        {/* TODO: add more space after stories */}
-        <h3>View more stories ></h3>
+        <h3>View more stories&nbsp;&nbsp;&nbsp;&nbsp;></h3>
       </Link>
     </div>
   </div>
