@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import styles from "./home-page.module.scss";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
+import howIBecameATeacher from "./images/how-i-became-a-teacher.png";
 
 export default () => (
   <div className={styles.container}>
@@ -22,6 +23,23 @@ export default () => (
         />
       </Link>
     </div>
-    <div></div>
+    <div id={styles.howIBecameATeacherContainer}>
+      <img
+        src={howIBecameATeacher}
+        alt="How I became a Teacher"
+        id={styles.howIBecameATeacherHeader}
+      />
+      <h3 id={styles.howIBecameATeacherText}>
+        Theo swapped his office job for a career as an English teacher. Read
+        Theo's story
+      </h3>
+      <Link
+        to="/life-as-a-teacher/stories/"
+        id={styles.howIBecameATeacherAnchor}
+      >
+        {/* TODO: add more space after stories */}
+        <h3>View more stories ></h3>
+      </Link>
+    </div>
   </div>
 );
