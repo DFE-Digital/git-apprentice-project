@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./home-page.module.scss";
+import Video from "../../components/video";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
 import howIBecameATeacher from "./images/how-i-became-a-teacher.png";
@@ -24,6 +25,10 @@ export default () => (
       </Link>
     </div>
     <div id={styles.howIBecameATeacherContainer}>
+      <Video
+        videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoTitle="Official Music Video on YouTube"
+      />
       <img
         src={howIBecameATeacher}
         alt="How I became a Teacher"
