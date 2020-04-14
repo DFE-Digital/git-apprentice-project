@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./home-page.module.scss";
-import inspireTheNextGeneration from "../../images/home-page/inspire-the-next-generation.png";
-import inspireTheNextGenerationSmall from "../../images/home-page/inspire-the-next-generation-small.png";
+import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
+import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
 
 export default () => (
   <div className={styles.container}>
@@ -22,6 +22,6 @@ export default () => (
         />
       </Link>
     </div>
-    <button className={styles.findEventsButton}>Find Events</button>
+    <div></div>
   </div>
 );
