@@ -1,4 +1,37 @@
+// COLOURS
 $git-black: #050708; // black
 $git-white: #ffffff; // white
 
+// DIMENSIONS
 $size-small: 640px; // mobile screen portrait
+$max-width: 1200px; // maximum width for desktop
+
+// FONTS
+$akzidenz-grotesk: "akzidenz-grotesk", sans-serif;
+
+@font-face {
+  font-family: "akzidenz-grotesk";
+  src: url ("../fonts/akzidnezgrotesk-roman/AkzidenzGrotesk-Roman.eot?")
+      format("eot"),
+    url ("../fonts/akzidnezgrotesk-roman/AkzidenzGrotesk-Roman.woff")
+      format("woff"),
+    url ("../fonts/akzidnezgrotesk-roman/AkzidenzGrotesk-Roman.ttf")
+      format("truetype"),
+    url ("../fonts/akzidnezgrotesk-roman/AkzidenzGrotesk-Roman.svg#Free3of9")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "akzidenz-grotesk";
+  src: url ("../fonts/akzidnezgrotesk-bold/AkzidenzGrotesk-Bold.eot?")
+      format("eot"),
+    url ("../fonts/akzidnezgrotesk-bold/AkzidenzGrotesk-Bold.woff")
+      format("woff"),
+    url ("../fonts/akzidnezgrotesk-bold/AkzidenzGrotesk-Bold.ttf")
+      format("truetype"),
+    url ("../fonts/akzidnezgrotesk-bold/AkzidenzGrotesk-Bold.svg#Free3of9")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
