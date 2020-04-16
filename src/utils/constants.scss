@@ -2,6 +2,7 @@
 $git-black: #050708; // black
 $git-white: #ffffff; // white
 $git-pink: #d44593; // pink
+$git-purple: #7e58a1; // purple
 
 // DIMENSIONS
 $size-small: 640px; // mobile screen portrait
@@ -35,4 +36,17 @@ $akzidenz-grotesk: "akzidenz-grotesk", sans-serif;
       format("svg");
   font-weight: bold;
   font-style: normal;
+}
+
+// EXPORTS
+
+/*
+ * This enables us import the scss file in JavaScript. 
+ * scss constants can be passed to components through props
+ * and used in inline styling
+ */
+
+:export {
+  gitPurple: $git-purple;
+  gitPink: $git-pink;
 }

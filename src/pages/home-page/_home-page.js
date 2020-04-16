@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./home-page.module.scss";
+import constantStyles from "../../utils/constants.scss";
 import Video from "../../components/video";
 import StyledButton from "../../components/styledButton/styledButton";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
@@ -69,6 +70,11 @@ export default () => (
         </h3>
       </Link>
     </div>
-    <StyledButton text="Sign up for an advisor" />
+    <StyledButton
+      text="Sign up for an advisor"
+      backgroundColor={constantStyles.gitPurple}
+      // to="/life-as-a-teacher/stories/"
+    />
+    <StyledButton text="Find Events" backgroundColor={constantStyles.gitPink} />
   </div>
 );
