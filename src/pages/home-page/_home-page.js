@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styles from "./home-page.module.scss";
 import Video from "../../components/video";
+import StyledButton from "../../components/styledButton/styledButton";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
 
@@ -68,5 +69,6 @@ export default () => (
         </h3>
       </Link>
     </div>
+    <StyledButton text="Sign up for an advisor" />
   </div>
 );

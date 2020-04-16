@@ -1,0 +1,9 @@
+@import "../../utils/constants.scss";
+
+#styledButton {
+  color: $git-white;
+  background-color: purple;
+  font-family: $akzidenz-grotesk;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+}
