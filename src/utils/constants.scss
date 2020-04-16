@@ -3,6 +3,7 @@ $git-black: #050708; // black
 $git-white: #ffffff; // white
 $git-pink: #d44593; // pink
 $git-purple: #7e58a1; // purple
+$git-blue: #0d78bb; // blue
 
 // DIMENSIONS
 $size-small: 640px; // mobile screen portrait
@@ -49,4 +50,5 @@ $akzidenz-grotesk: "akzidenz-grotesk", sans-serif;
 :export {
   gitPurple: $git-purple;
   gitPink: $git-pink;
+  gitBlue: $git-blue;
 }

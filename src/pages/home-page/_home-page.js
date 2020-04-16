@@ -6,6 +6,7 @@ import Video from "../../components/video";
 import StyledButton from "../../components/styledButton/styledButton";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
+import StyledHeading from "../../components/styledHeading/styledHeading";
 
 export default () => (
   <div className={styles.container}>
@@ -32,31 +33,14 @@ export default () => (
         videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
         videoTitle="Official Music Video on YouTube"
       />
-      <div id={styles.containerHeaderHowIBecameATeacher}>
-        <Link
-          id={styles.anchorHeaderHowIBecameATeacher}
-          to="/life-as-a-teacher/stories/"
-        >
-          <h1 id={styles.headerHowIBecameATeacher}>
-            <span id={styles.headerLineOneBackgroundHowIBecameATeacher}>
-              <div
-                className={styles.headerTextHowIBecameATeacher}
-                id={styles.headerLineOneHowIBecameATeacher}
-              >
-                How I became
-              </div>
-            </span>
-            <div>
-              <span
-                className={styles.headerTextHowIBecameATeacher}
-                id={styles.headerLineTwoHowIBecameATeacher}
-              >
-                a teacher
-              </span>
-            </div>
-          </h1>
-        </Link>
-      </div>
+      <StyledHeading
+        to="/life-as-a-teacher/stories/"
+        textAndBackground={[
+          { text: "How I became", color: constantStyles.gitPink },
+          { text: "a teacher", color: null },
+        ]}
+        rotation="-5"
+      />
       <h3 className={styles.howIBecameATeacherText}>
         Theo swapped his office job for a career as an English teacher. Read
         Theo's story
@@ -76,5 +60,25 @@ export default () => (
       // to="/life-as-a-teacher/stories/"
     />
     <StyledButton text="Find Events" backgroundColor={constantStyles.gitPink} />
+    <div style={{ backgroundColor: "black" }}>
+      <StyledHeading
+        to="/life-as-a-teacher/stories/"
+        textAndBackground={[
+          { text: "Just trying out", color: constantStyles.gitPink },
+          { text: "the component", color: constantStyles.gitPink },
+        ]}
+        rotation="-5"
+      />
+      <div>
+        <StyledHeading
+          to="/life-as-a-teacher/stories/"
+          textAndBackground={[
+            { text: "Inspire the next", color: constantStyles.gitBlue },
+            { text: "generation" },
+          ]}
+          rotation="5"
+        />
+      </div>
+    </div>
   </div>
 );

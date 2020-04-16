@@ -1,0 +1,32 @@
+@import "../../utils/constants.scss";
+
+#containerHeaderHowIBecameATeacher {
+  display: inline-flex;
+}
+
+#anchorHeaderHowIBecameATeacher {
+  text-decoration: none;
+}
+
+#headerHowIBecameATeacher {
+  font-family: $akzidenz-grotesk;
+  color: $git-white;
+}
+
+.headerTextHowIBecameATeacher {
+  border-bottom: 2px solid $git-white;
+  margin-bottom: 10px;
+}
+
+#headerLineBackgroundHowIBecameATeacher {
+  padding: 10px 10px 10px 10px;
+}
+
+#headerLineTextBackgroundHowIBecameATeacher {
+  display: inline-flex;
+  padding-right: 10px;
+}
+
+#headerLineTextHowIBecameATeacher {
+  padding-left: 10px;
+}

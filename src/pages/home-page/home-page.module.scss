@@ -53,40 +53,6 @@
   display: inline-block;
 }
 
-#containerHeaderHowIBecameATeacher {
-  background-color: green;
-  display: inline-flex;
-}
-
-#anchorHeaderHowIBecameATeacher {
-  text-decoration: none;
-}
-
-#headerHowIBecameATeacher {
-  font-family: $akzidenz-grotesk;
-  color: $git-white;
-
-  -ms-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-}
-
-.headerTextHowIBecameATeacher {
-  border-bottom: 2px solid $git-white;
-}
-#headerLineOneBackgroundHowIBecameATeacher {
-  background-color: $git-pink;
-  padding: 10px 10px 10px 10px;
-}
-
-#headerLineOneHowIBecameATeacher {
-  display: inline-flex;
-  padding-right: 10px;
-}
-
-#headerLineTwoHowIBecameATeacher {
-  padding-left: 10px;
-}
-
 .howIBecameATeacherText {
   color: $git-white;
   font-family: $akzidenz-grotesk;
