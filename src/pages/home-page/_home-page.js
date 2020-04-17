@@ -55,7 +55,7 @@ export default () => (
       </Link>
     </div>
     <StyledButton
-      text="Sign up for an advisor"
+      text="Sign up for an adviser"
       backgroundColor={constantStyles.gitPurple}
       // to="/life-as-a-teacher/stories/"
     />
@@ -75,6 +75,7 @@ export default () => (
           textAndBackground={[
             { text: "Inspire the next", color: constantStyles.gitBlue },
             { text: "generation" },
+            { text: "skewed to the right!" },
           ]}
           rotation="5"
         />

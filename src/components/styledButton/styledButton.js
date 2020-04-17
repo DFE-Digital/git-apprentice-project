@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./StyledButton.module.scss";
+import styles from "./styledButton.module.scss";
 
 const StyledButton = props => {
   const { to, backgroundColor, text } = props;
