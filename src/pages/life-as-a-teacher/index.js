@@ -1,1 +1,1 @@
-export { default } from "./_root/_life-as-a-teacher";
+export { default } from "./root/_life-as-a-teacher";
