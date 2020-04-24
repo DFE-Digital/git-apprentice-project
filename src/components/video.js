@@ -10,6 +10,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      style={{ height: "400px", width: "700px" }} //TODO : fix this
     />
   </div>
 );

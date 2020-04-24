@@ -28,31 +28,35 @@ export default () => (
       </Link>
     </div>
     <div id={styles.howIBecameATeacherContainer}>
-      <Video
-        id={styles.howIBecameATeacherVideo}
-        videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        videoTitle="Official Music Video on YouTube"
-      />
-      <StyledHeading
-        to="/life-as-a-teacher/stories/"
-        textAndBackground={[
-          { text: "How I became", color: constantStyles.gitPink },
-          { text: "a teacher", color: null },
-        ]}
-        rotation={-5}
-      />
-      <h3 className={styles.howIBecameATeacherText}>
-        Theo swapped his office job for a career as an English teacher. Read
-        Theo's story
-      </h3>
-      <Link
-        to="/life-as-a-teacher/stories/"
-        id={styles.howIBecameATeacherAnchor}
-      >
+      <div id={styles.howIBecameATeacherVideoContainer}>
+        <Video
+          id={styles.howIBecameATeacherVideo}
+          videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          videoTitle="Official Music Video on YouTube"
+        />
+      </div>
+      <div>
+        <StyledHeading
+          to="/life-as-a-teacher/stories/"
+          textAndBackground={[
+            { text: "How I became", color: constantStyles.gitPink },
+            { text: "a teacher", color: null },
+          ]}
+          rotation={-5}
+        />
         <h3 className={styles.howIBecameATeacherText}>
-          View more stories&nbsp;&nbsp;&nbsp;&nbsp;>
+          Theo swapped his office job for a career as an English teacher. Read
+          Theo's story
         </h3>
-      </Link>
+        <Link
+          to="/life-as-a-teacher/stories/"
+          id={styles.howIBecameATeacherAnchor}
+        >
+          <h3 className={styles.howIBecameATeacherText}>
+            View more stories&nbsp;&nbsp;&nbsp;&nbsp;>
+          </h3>
+        </Link>
+      </div>
     </div>
     <StyledButton
       text="Sign up for an adviser"

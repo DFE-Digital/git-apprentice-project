@@ -22,6 +22,7 @@
 
 #inspireImageLargeContainer {
   position: relative;
+  padding-bottom: 3px;
 }
 
 #anchorLifeAsATeacher {
@@ -47,6 +48,7 @@
 // HOW I BECAME A TEACHER
 #howIBecameATeacherContainer {
   background-color: $git-black;
+  display: flex;
 }
 
 #howIBecameATeacherVideo {
@@ -61,4 +63,10 @@
 
 #howIBecameATeacherAnchor {
   text-decoration: none;
+}
+
+#howIBecameATeacherVideoContainer {
+  padding-left: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
