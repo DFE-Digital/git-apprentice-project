@@ -39,7 +39,7 @@ export default () => (
           { text: "How I became", color: constantStyles.gitPink },
           { text: "a teacher", color: null },
         ]}
-        rotation="-5"
+        rotation={-5}
       />
       <h3 className={styles.howIBecameATeacherText}>
         Theo swapped his office job for a career as an English teacher. Read
@@ -67,7 +67,7 @@ export default () => (
           { text: "Just trying out", color: constantStyles.gitPink },
           { text: "the component", color: constantStyles.gitPink },
         ]}
-        rotation="-5"
+        rotation={-5}
       />
       <div>
         <StyledHeading
@@ -77,7 +77,7 @@ export default () => (
             { text: "generation" },
             { text: "skewed to the right!" },
           ]}
-          rotation="5"
+          rotation={5}
         />
       </div>
     </div>
