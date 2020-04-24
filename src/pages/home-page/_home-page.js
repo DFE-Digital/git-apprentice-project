@@ -4,9 +4,10 @@ import styles from "./home-page.module.scss";
 import constantStyles from "../../utils/constants.scss";
 import Video from "../../components/video";
 import StyledButton from "../../components/styledButton/styledButton";
+import StyledHeading from "../../components/styledHeading/styledHeading";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
-import StyledHeading from "../../components/styledHeading/styledHeading";
+import simonTeacher from "./images/simon-teacher.jpg";
 
 export default () => (
   <div className={styles.container}>
@@ -35,7 +36,7 @@ export default () => (
           videoTitle="Official Music Video on YouTube"
         />
       </div>
-      <div>
+      <div id={styles.howIBecameATeacherTextContainer}>
         <StyledHeading
           to="/life-as-a-teacher/stories/"
           textAndBackground={[
@@ -56,6 +57,20 @@ export default () => (
             View more stories&nbsp;&nbsp;&nbsp;&nbsp;>
           </h3>
         </Link>
+      </div>
+    </div>
+    <div id={styles.simonTeacherContainer}>
+      <img
+        id={styles.simonTeacherImage}
+        src={simonTeacher}
+        alt="Teacher teaching a student"
+      ></img>
+      <div id={styles.simonTeacherText}>
+        <p>
+          The best parts of teaching for me are seeing that lightbulb moment
+          when a child suddenly understands something they didn't before.
+        </p>
+        <p>Simon, teacher</p>
       </div>
     </div>
     <StyledButton
