@@ -8,6 +8,7 @@ import StyledHeading from "../../components/styledHeading/styledHeading";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
 import simonTeacher from "./images/simon-teacher.jpg";
+import simonTeacherImageSmall from "./images/simon-teacher-small.jpg";
 
 export default () => (
   <div className={styles.container}>
@@ -63,6 +64,11 @@ export default () => (
       <img
         id={styles.simonTeacherImage}
         src={simonTeacher}
+        alt="Teacher teaching a student"
+      ></img>
+      <img
+        id={styles.simonTeacherImageSmall}
+        src={simonTeacherImageSmall}
         alt="Teacher teaching a student"
       ></img>
       <div id={styles.simonTeacherText}>

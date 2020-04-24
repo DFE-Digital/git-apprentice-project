@@ -51,8 +51,20 @@
   display: flex;
 }
 
-#howIBecameATeacherVideo {
+#howIBecameATeacherVideoContainer {
   display: inline-block;
+  height: 400px;
+  width: 65%;
+  padding-left: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+#howIBecameATeacherTextContainer {
+  border: red solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .howIBecameATeacherText {
@@ -65,27 +77,17 @@
   text-decoration: none;
 }
 
-#howIBecameATeacherVideoContainer {
-  padding-left: 40px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-#howIBecameATeacherTextContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 // SIMON TEACHER
-#simonTeacherImage {
-  width: 100%;
-  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
-}
-
 #simonTeacherContainer {
+  background: linear-gradient(to bottom, $git-black 50%, transparent 50%);
   position: relative;
   text-align: center;
+}
+
+#simonTeacherImage,
+#simonTeacherImageSmall {
+  width: 100%;
+  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
 }
 
 #simonTeacherText {
@@ -99,4 +101,22 @@
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.8;
+}
+
+@media only screen and (max-width: $size-medium) {
+  #simonTeacherText {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: $size-small) {
+  #simonTeacherImage {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $size-small) {
+  #simonTeacherImageSmall {
+    display: none;
+  }
 }
