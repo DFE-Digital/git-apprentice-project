@@ -8,7 +8,9 @@ import StyledHeading from "../../components/styledHeading/styledHeading";
 import inspireTheNextGeneration from "./images/inspire-the-next-generation.png";
 import inspireTheNextGenerationSmall from "./images/inspire-the-next-generation-small.png";
 import simonTeacher from "./images/simon-teacher.jpg";
-import simonTeacherImageSmall from "./images/simon-teacher-small.jpg";
+import simonTeacherSmall from "./images/simon-teacher-small.jpg";
+import abigailTeacher from "./images/abigail-teacher.jpg";
+import abigailTeacherSmall from "./images/abigail-teacher-small.jpg";
 
 export default () => (
   <div className={styles.container}>
@@ -60,7 +62,7 @@ export default () => (
         </Link>
       </div>
     </div>
-    <div id={styles.simonTeacherContainer}>
+    <div id={styles.simonTeacherContainer} className={styles.teacherContainer}>
       <img
         id={styles.simonTeacherImage}
         src={simonTeacher}
@@ -68,15 +70,37 @@ export default () => (
       ></img>
       <img
         id={styles.simonTeacherImageSmall}
-        src={simonTeacherImageSmall}
+        src={simonTeacherSmall}
         alt="Teacher teaching a student"
       ></img>
-      <div id={styles.simonTeacherText}>
+      <div className={styles.teacherText}>
         <p>
+          {/* <span className={styles.simonTeacherTextQuotes}>"</span> */}
           The best parts of teaching for me are seeing that lightbulb moment
           when a child suddenly understands something they didn't before.
+          {/* <span className={styles.simonTeacherTextQuotes}>"</span> */}
         </p>
         <p>Simon, teacher</p>
+      </div>
+    </div>
+    <div className={styles.teacherContainer}>
+      <img
+        src={abigailTeacher}
+        id={styles.abigailTeacherImage}
+        alt="Teacher teaching a student"
+      ></img>
+      <img
+        src={abigailTeacherSmall}
+        id={styles.abigailTeacherImageSmall}
+        alt="Teacher teaching a student"
+      ></img>
+      <div className={styles.teacherText}>
+        <p>
+          ...it's a job that is full of rewards and you have the privilege of
+          seeing children progress, grow and shine during their time with you.
+          There is no greater feeling.
+        </p>
+        <p>Abigail, Primary teacher</p>
       </div>
     </div>
     <StyledButton

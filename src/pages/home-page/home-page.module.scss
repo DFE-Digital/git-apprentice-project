@@ -77,20 +77,14 @@
   text-decoration: none;
 }
 
-// SIMON TEACHER
-#simonTeacherContainer {
-  background: linear-gradient(to bottom, $git-black 50%, transparent 50%);
+//TEACHER IMAGES
+
+.teacherContainer {
   position: relative;
   text-align: center;
 }
 
-#simonTeacherImage,
-#simonTeacherImageSmall {
-  width: 100%;
-  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
-}
-
-#simonTeacherText {
+.teacherText {
   width: 68%;
   position: absolute;
   top: 50%;
@@ -104,19 +98,41 @@
 }
 
 @media only screen and (max-width: $size-medium) {
-  #simonTeacherText {
+  .teacherText {
     font-size: 1em;
   }
 }
 
 @media only screen and (max-width: $size-small) {
-  #simonTeacherImage {
+  #simonTeacherImage,
+  #abigailTeacherImage {
     display: none;
   }
 }
 
 @media only screen and (min-width: $size-small) {
-  #simonTeacherImageSmall {
+  #simonTeacherImageSmall,
+  #abigailTeacherImageSmall {
     display: none;
   }
+}
+
+// SIMON TEACHER
+
+#simonTeacherContainer {
+  background: linear-gradient(to bottom, $git-black 50%, transparent 50%);
+}
+
+#simonTeacherImage,
+#simonTeacherImageSmall {
+  width: 100%;
+  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
+}
+
+//ABIGAIL TEACHER
+
+#abigailTeacherImage,
+#abigailTeacherImageSmall {
+  width: 100%;
+  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
 }
