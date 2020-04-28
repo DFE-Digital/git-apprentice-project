@@ -131,8 +131,42 @@
 
 //ABIGAIL TEACHER
 
+#abigailTeacherContainer {
+  background: linear-gradient(to bottom, $git-yellow 50%, transparent 50%);
+}
+
 #abigailTeacherImage,
 #abigailTeacherImageSmall {
   width: 100%;
   clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#abigailTeacherBorder {
+  background-color: $git-white;
+  height: 495px;
+  position: relative;
+
+  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+}
+
+//SIGN UP FOR AN ADVISER
+
+#signUpAdviserContainer {
+  background-color: $git-yellow;
+  display: flex;
+}
+
+#signUpAdviserText {
+  font-size: 1.5em;
+  font-family: $akzidenz-grotesk;
+  color: $git-slategrey;
+  padding: 60px 50px 60px 50px;
+}
+
+#signUpAdviserButtonContainer {
+  padding-top: 60px;
 }

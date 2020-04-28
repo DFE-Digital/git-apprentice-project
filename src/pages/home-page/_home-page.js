@@ -83,12 +83,29 @@ export default () => (
         <p>Simon, teacher</p>
       </div>
     </div>
-    <div className={styles.teacherContainer}>
-      <img
-        src={abigailTeacher}
-        id={styles.abigailTeacherImage}
-        alt="Teacher teaching a student"
-      ></img>
+    <div id={styles.signUpAdviserContainer}>
+      <h3 id={styles.signUpAdviserText}>
+        Sign up and get advice on how to take your next step into teaching
+      </h3>
+      <div id={styles.signUpAdviserButtonContainer}>
+        <StyledButton
+          text="Sign up for an adviser"
+          backgroundColor={constantStyles.gitPurple}
+          // to="/life-as-a-teacher/stories/"
+        />
+      </div>
+    </div>
+    <div
+      className={styles.teacherContainer}
+      id={styles.abigailTeacherContainer}
+    >
+      <div id={styles.abigailTeacherBorder}>
+        <img
+          src={abigailTeacher}
+          id={styles.abigailTeacherImage}
+          alt="Teacher teaching a student"
+        ></img>
+      </div>
       <img
         src={abigailTeacherSmall}
         id={styles.abigailTeacherImageSmall}
@@ -103,11 +120,6 @@ export default () => (
         <p>Abigail, Primary teacher</p>
       </div>
     </div>
-    <StyledButton
-      text="Sign up for an adviser"
-      backgroundColor={constantStyles.gitPurple}
-      // to="/life-as-a-teacher/stories/"
-    />
     <StyledButton text="Find Events" backgroundColor={constantStyles.gitPink} />
     <div style={{ backgroundColor: "black" }}>
       <StyledHeading
