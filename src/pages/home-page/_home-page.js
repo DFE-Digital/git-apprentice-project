@@ -76,10 +76,8 @@ export default () => (
       />
       <div className={styles.teacherText}>
         <p>
-          {/* <span className={styles.simonTeacherTextQuotes}>"</span> */}
           The best parts of teaching for me are seeing that lightbulb moment
           when a child suddenly understands something they didn't before.
-          {/* <span className={styles.simonTeacherTextQuotes}>"</span> */}
         </p>
         <p>Simon, teacher</p>
       </div>
@@ -94,7 +92,11 @@ export default () => (
           ]}
         />
       </div>
-      <img src={teacherTraining} alt="Teacher training adviser" />
+      <img
+        src={teacherTraining}
+        alt="Teacher training adviser"
+        id={styles.teacherTrainingAdviserImage}
+      />
     </div>
     <div id={styles.signUpAdviserContainer}>
       <h3 id={styles.signUpAdviserText}>
