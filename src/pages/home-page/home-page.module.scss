@@ -170,3 +170,20 @@
 #signUpAdviserButtonContainer {
   padding-top: 60px;
 }
+
+//TEACHER TRAINING ADVISER
+
+#teacherTrainingContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+#teacherTrainingHeadingContainer {
+  background-color: $git-purple;
+  font-size: large;
+  transform: rotate(5deg);
+  //width: 3000px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}

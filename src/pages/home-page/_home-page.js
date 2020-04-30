@@ -11,6 +11,7 @@ import simonTeacher from "./images/simon-teacher.jpg";
 import simonTeacherSmall from "./images/simon-teacher-small.jpg";
 import abigailTeacher from "./images/abigail-teacher.jpg";
 import abigailTeacherSmall from "./images/abigail-teacher-small.jpg";
+import teacherTraining from "./images/teacher-training-adviser.png";
 
 export default () => (
   <div className={styles.container}>
@@ -67,12 +68,12 @@ export default () => (
         id={styles.simonTeacherImage}
         src={simonTeacher}
         alt="Teacher teaching a student"
-      ></img>
+      />
       <img
         id={styles.simonTeacherImageSmall}
         src={simonTeacherSmall}
         alt="Teacher teaching a student"
-      ></img>
+      />
       <div className={styles.teacherText}>
         <p>
           {/* <span className={styles.simonTeacherTextQuotes}>"</span> */}
@@ -82,6 +83,18 @@ export default () => (
         </p>
         <p>Simon, teacher</p>
       </div>
+    </div>
+    <div id={styles.teacherTrainingContainer}>
+      <div id={styles.teacherTrainingHeadingContainer}>
+        <StyledHeading
+          to="/life-as-a-teacher/stories/"
+          textAndBackground={[
+            { text: "Get advice from a teacher" },
+            { text: "training adviser" },
+          ]}
+        />
+      </div>
+      <img src={teacherTraining} alt="Teacher training adviser" />
     </div>
     <div id={styles.signUpAdviserContainer}>
       <h3 id={styles.signUpAdviserText}>
