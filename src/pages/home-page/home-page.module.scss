@@ -1,5 +1,8 @@
 @import "../../utils/constants.scss";
 
+// VARIABLES
+$border-width: 3px;
+
 .container {
   max-width: $max-width;
   margin: auto;
@@ -22,7 +25,7 @@
 
 #inspireImageLargeContainer {
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: $border-width;
 }
 
 #anchorLifeAsATeacher {
@@ -78,7 +81,6 @@
 }
 
 //TEACHER IMAGES
-
 .teacherContainer {
   position: relative;
   text-align: center;
@@ -118,7 +120,6 @@
 }
 
 // SIMON TEACHER
-
 #simonTeacherContainer {
   background: linear-gradient(to bottom, $git-black 50%, transparent 50%);
 }
@@ -130,31 +131,26 @@
 }
 
 //ABIGAIL TEACHER
-
 #abigailTeacherContainer {
   background: linear-gradient(to bottom, $git-yellow 50%, transparent 50%);
 }
 
-#abigailTeacherImage,
-#abigailTeacherImageSmall {
-  width: 100%;
-  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #abigailTeacherBorder {
   background-color: $git-white;
-  height: 495px;
-  position: relative;
-
   clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+}
+
+#abigailTeacherImage,
+#abigailTeacherImageSmall {
+  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+  position: relative;
+  // shifts the image down by the border height, cutting off the bottom of the image
+  // allows a top border on an element with clip path
+  top: $border-width;
+  width: 100%;
 }
 
 //SIGN UP FOR AN ADVISER
-
 #signUpAdviserContainer {
   background-color: $git-yellow;
   display: flex;
@@ -172,7 +168,6 @@
 }
 
 //TEACHER TRAINING ADVISER
-
 #teacherTrainingContainer {
   position: relative;
   overflow: hidden;
@@ -184,7 +179,6 @@
 #teacherTrainingHeadingContainer {
   position: absolute;
   background-color: $git-purple;
-  font-size: large;
   transform: rotate(5deg);
   width: 1000px;
   height: 250px;
