@@ -99,14 +99,13 @@ export default () => (
       />
     </div>
     <div id={styles.signUpAdviserContainer}>
-      <h3 id={styles.signUpAdviserText}>
+      <p id={styles.signUpAdviserText}>
         Sign up and get advice on how to take your next step into teaching
-      </h3>
+      </p>
       <div id={styles.signUpAdviserButtonContainer}>
         <StyledButton
           text="Sign up for an adviser"
           backgroundColor={constantStyles.gitPurple}
-          // to="/life-as-a-teacher/stories/"
         />
       </div>
     </div>

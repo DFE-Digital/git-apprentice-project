@@ -8,6 +8,20 @@ $border-width: 3px;
   margin: auto;
 }
 
+p {
+  font-weight: bold;
+  font-family: $akzidenz-grotesk;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: $size-medium) {
+  p {
+    font-size: 1.3em;
+  }
+}
+
 // INSPIRE THE NEXT GENERATION IMAGE
 #inspireImageLarge {
   width: 100%;
@@ -93,15 +107,11 @@ $border-width: 3px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: $git-white;
-  font-family: $akzidenz-grotesk;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.8;
 }
 
 @media only screen and (max-width: $size-medium) {
   .teacherText {
-    font-size: 1em;
+    width: 80%;
   }
 }
 
@@ -162,17 +172,28 @@ $border-width: 3px;
 #signUpAdviserContainer {
   background-color: $git-yellow;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #signUpAdviserText {
-  font-size: 1.5em;
-  font-family: $akzidenz-grotesk;
   color: $git-slategrey;
-  padding: 60px 50px 60px 50px;
+  padding: 25px 25px 25px 25px;
 }
 
 #signUpAdviserButtonContainer {
-  padding-top: 60px;
+  //padding-top: 60px;
+}
+
+@media only screen and (max-width: $size-medium) {
+  #signUpAdviserText {
+    color: black;
+  }
+
+  #signUpAdviserContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 //ABIGAIL TEACHER
