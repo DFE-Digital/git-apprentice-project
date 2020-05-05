@@ -4,8 +4,16 @@
   color: $git-white;
   font-family: $akzidenz-grotesk;
   padding: 10px 40px 10px 40px;
-  font-size: 1.25em;
+  font-size: 1.3em;
   border: 0;
   box-shadow: none;
   border-radius: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: $size-small) {
+  #styledButton {
+    width: 80%;
+  }
 }
