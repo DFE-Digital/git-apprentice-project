@@ -2,6 +2,8 @@
 
 // VARIABLES
 $border-width: 3px;
+$large-heading-font-size: 2.5vw;
+$large-heading-mobile-font-size: 2.8vw;
 
 .container {
   max-width: $max-width;
@@ -18,8 +20,9 @@ h3 {
 }
 
 @media only screen and (max-width: $size-medium) {
-  p {
-    font-size: 1.3em;
+  p,
+  h3 {
+    font-size: 1.2em;
   }
 }
 
@@ -95,7 +98,7 @@ h3 {
 #howIBecameATeacherHeadingContainer {
   left: -2px;
   position: absolute;
-  font-size: 2.5vw;
+  font-size: $large-heading-font-size;
   top: 20px;
 }
 
@@ -123,21 +126,18 @@ h3 {
   #howIBecameATeacherTextContainer {
     padding-left: 10px;
   }
+
   #howIBecameATeacherHeadingContainer {
     left: -20px;
     padding-top: 10px;
   }
+
   #howIBecameATeacherVideoContainer {
     padding-left: 25px;
   }
+
   #theoText {
     top: 55%;
-  }
-}
-
-@media screen and (min-width: $max-width) {
-  #howIBecameATeacherHeadingContainer {
-    font-size: 2em;
   }
 }
 
@@ -203,7 +203,7 @@ h3 {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%) rotate(5deg);
-  font-size: 2.4vw;
+  font-size: $large-heading-font-size;
   right: 110px;
 }
 
@@ -213,12 +213,6 @@ h3 {
   top: 0;
   z-index: 2;
   height: 100%;
-}
-
-@media screen and (min-width: $max-width) {
-  .teacherTrainingHeadingContainer {
-    font-size: 2em;
-  }
 }
 
 @media screen and (max-width: $size-medium) {
@@ -237,7 +231,7 @@ h3 {
   }
 
   #teacherTrainingHeadingContainerSmall {
-    font-size: 2.8vw;
+    font-size: $large-heading-mobile-font-size;
     padding-left: 15%;
   }
 }
@@ -289,22 +283,86 @@ h3 {
   }
 }
 
+// ABIGAIL TEACHER AND FIND EVENTS
+#abigailAndFindEventsContainer {
+  background: linear-gradient(to bottom, $git-yellow 50%, transparent 50%);
+  position: relative;
+  overflow: hidden;
+}
+
 // ABIGAIL TEACHER
 #abigailTeacherContainer {
-  background: linear-gradient(to bottom, $git-yellow 50%, transparent 50%);
+  position: relative;
 }
 
 #abigailTeacherBorder {
   background-color: $git-white;
-  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 #abigailTeacherImage,
 #abigailTeacherImageSmall {
-  clip-path: polygon(50% 8%, 100% 0, 100% 85%, 0 100%, 0 0);
+  clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
   position: relative;
   // shifts the image down by the border height, cutting off the bottom of the image
   // allows a top border on an element with clip path
   top: $border-width;
   width: 100%;
+}
+
+// FIND AN EVENT NEAR YOU
+#findAnEventNearYouBorder {
+  position: absolute;
+  background-color: $git-white;
+  height: 18%;
+  left: -10px;
+  right: -10px;
+  top: 55%;
+  transform: translateY(-50%) rotate(-3deg);
+  z-index: 1;
+}
+
+#findAnEventNearYouBackground {
+  background-color: $git-pink;
+  width: 100%;
+  position: absolute;
+  height: calc(100% - #{($border-width * 2)});
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: $large-heading-font-size;
+}
+
+// AERIAL MAP
+#mapImageContainer {
+  position: relative;
+}
+
+#manchesterMapImage {
+  width: 100%;
+}
+
+#findEventsButton {
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+}
+
+#comeToATeachingEventText {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  color: $git-white;
+  text-align: justify;
+  text-align-last: left;
+}
+
+@media screen and (min-width: $max-width) {
+  // Must be here becuase of CSS precedence
+  .teacherTrainingHeadingContainer,
+  #howIBecameATeacherHeadingContainer,
+  #findAnEventNearYouBackground {
+    font-size: 2em;
+  }
 }

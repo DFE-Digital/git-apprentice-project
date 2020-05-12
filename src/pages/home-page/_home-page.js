@@ -12,6 +12,7 @@ import simonTeacherSmall from "./images/simon-teacher-small.jpg";
 import abigailTeacher from "./images/abigail-teacher.jpg";
 import abigailTeacherSmall from "./images/abigail-teacher-small.jpg";
 import teacherTraining from "./images/teacher-training-adviser.png";
+import manchesterMap from "./images/manchester-map.png";
 
 export default () => (
   <div className={styles.container}>
@@ -131,30 +132,57 @@ export default () => (
     </div>
     <div
       className={styles.teacherContainer}
-      id={styles.abigailTeacherContainer}
+      id={styles.abigailAndFindEventsContainer}
     >
-      <div id={styles.abigailTeacherBorder}>
+      <div id={styles.abigailTeacherContainer}>
+        <div id={styles.abigailTeacherBorder}>
+          <img
+            src={abigailTeacher}
+            id={styles.abigailTeacherImage}
+            alt="Teacher teaching a student"
+          ></img>
+        </div>
         <img
-          src={abigailTeacher}
-          id={styles.abigailTeacherImage}
+          src={abigailTeacherSmall}
+          id={styles.abigailTeacherImageSmall}
           alt="Teacher teaching a student"
-        ></img>
+        />
+        <div className={styles.teacherText}>
+          <p>
+            ...it's a job that is full of rewards and you have the privilege of
+            seeing children progress, grow and shine during their time with you.
+            There is no greater feeling.
+          </p>
+          <p>Abigail, Primary teacher</p>
+        </div>
       </div>
-      <img
-        src={abigailTeacherSmall}
-        id={styles.abigailTeacherImageSmall}
-        alt="Teacher teaching a student"
-      ></img>
-      <div className={styles.teacherText}>
-        <p>
-          ...it's a job that is full of rewards and you have the privilege of
-          seeing children progress, grow and shine during their time with you.
-          There is no greater feeling.
-        </p>
-        <p>Abigail, Primary teacher</p>
+      <div id={styles.findAnEventNearYouBorder}>
+        <div id={styles.findAnEventNearYouBackground}>
+          <StyledHeading
+            to="/life-as-a-teacher/stories/"
+            textAndBackground={[{ text: "Find an event near you" }]}
+          />
+        </div>
+      </div>
+      <div id={styles.mapImageContainer}>
+        <img
+          src={manchesterMap}
+          id={styles.manchesterMapImage}
+          alt="Aerial map of Manchester, UK"
+        />
+        <div id={styles.findEventsButton}>
+          <StyledButton
+            text="Find Events"
+            backgroundColor={constantStyles.gitPink}
+          />
+        </div>
+        <h3 id={styles.comeToATeachingEventText}>
+          Come to a free teaching event and find out how you can train to be a
+          teacher.
+        </h3>
       </div>
     </div>
-    <StyledButton text="Find Events" backgroundColor={constantStyles.gitPink} />
+
     <div style={{ backgroundColor: "black" }}>
       <StyledHeading
         to="/life-as-a-teacher/stories/"
