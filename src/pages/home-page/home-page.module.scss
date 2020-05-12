@@ -22,6 +22,12 @@ p {
   }
 }
 
+@media only screen and (max-width: $size-small) {
+  p {
+    font-size: 1em;
+  }
+}
+
 // INSPIRE THE NEXT GENERATION IMAGE
 #inspireImageLarge {
   width: 100%;
@@ -178,21 +184,34 @@ p {
 
 #signUpAdviserText {
   color: $git-slategrey;
-  padding: 25px 25px 25px 25px;
+  padding: 25px 0px 25px 45px;
 }
 
 #signUpAdviserButtonContainer {
-  width: 100%;
+  margin-left: auto;
+  margin-right: 0px;
+  padding: 25px 45px;
 }
 
 @media only screen and (max-width: $size-medium) {
-  #signUpAdviserText {
-    color: black;
-  }
-
   #signUpAdviserContainer {
     display: flex;
     flex-direction: column;
+  }
+
+  #signUpAdviserText {
+    color: black;
+    padding: 25px 25px 0;
+    display: inline-block;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  #signUpAdviserButtonContainer {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0 25px;
   }
 }
 
