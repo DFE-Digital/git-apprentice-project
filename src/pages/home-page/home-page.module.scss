@@ -95,7 +95,7 @@ h3 {
 #howIBecameATeacherHeadingContainer {
   left: -2px;
   position: absolute;
-  font-size: 2em;
+  font-size: 2.5vw;
   top: 20px;
 }
 
@@ -116,6 +116,29 @@ h3 {
   top: 60%;
   transform: translateY(-50%);
   line-height: 1.3em;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: $size-medium) {
+  #howIBecameATeacherTextContainer {
+    padding-left: 10px;
+  }
+  #howIBecameATeacherHeadingContainer {
+    left: -20px;
+    padding-top: 10px;
+  }
+  #howIBecameATeacherVideoContainer {
+    padding-left: 25px;
+  }
+  #theoText {
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: $max-width) {
+  #howIBecameATeacherHeadingContainer {
+    font-size: 2em;
+  }
 }
 
 // TEACHER IMAGES
