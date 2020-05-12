@@ -36,20 +36,23 @@ export default () => (
       <div id={styles.howIBecameATeacherVideoContainer}>
         <Video
           id={styles.howIBecameATeacherVideo}
-          videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          videoTitle="Official Music Video on YouTube"
+          videoSrcURL="https://youtube.com/embed/aGd_Rrs-qNY"
+          videoTitle="Theo English teacher"
         />
       </div>
       <div id={styles.howIBecameATeacherTextContainer}>
-        <StyledHeading
-          to="/life-as-a-teacher/stories/"
-          textAndBackground={[
-            { text: "How I became", color: constantStyles.gitPink },
-            { text: "a teacher", color: null },
-          ]}
-          rotation={-5}
-        />
-        <h3 className={styles.howIBecameATeacherText}>
+        <div id={styles.howIBecameATeacherHeadingContainer}>
+          <StyledHeading
+            to="/life-as-a-teacher/stories/"
+            textAndBackground={[
+              { text: "How I became", color: constantStyles.gitPink },
+              { text: "a teacher", color: null },
+            ]}
+            rotation={-5}
+            paddingLeft="50px"
+          />
+        </div>
+        <h3 className={styles.howIBecameATeacherText} id={styles.theoText}>
           Theo swapped his office job for a career as an English teacher. Read
           Theo's story
         </h3>

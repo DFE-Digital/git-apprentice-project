@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styles from "./styledHeading.module.scss";
 
 const StyledHeading = props => {
-  const { to, textAndBackground, rotation } = props;
+  const { to, textAndBackground, rotation, paddingLeft } = props;
 
   return (
     <div id={styles.containerHeading}>
@@ -18,7 +18,7 @@ const StyledHeading = props => {
           {textAndBackground.map(line => (
             <div>
               <span
-                style={{ backgroundColor: line.color }}
+                style={{ backgroundColor: line.color, paddingLeft }}
                 id={styles.textContainerHeading}
               >
                 <span className={styles.textHeading}>{line.text}</span>
