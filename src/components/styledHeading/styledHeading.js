@@ -15,8 +15,8 @@ const StyledHeading = props => {
             msTransform: `rotate(${rotation}deg)`,
           }}
         >
-          {textAndBackground.map(line => (
-            <div>
+          {textAndBackground.map((line, index) => (
+            <div key={index}>
               <span
                 style={{ backgroundColor: line.color, paddingLeft }}
                 id={styles.textContainerHeading}
