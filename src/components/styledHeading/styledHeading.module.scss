@@ -14,6 +14,8 @@ $horiz-spacing: 15px;
 #heading {
   font-family: $akzidenz-grotesk;
   color: $git-white;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #textContainerHeading {

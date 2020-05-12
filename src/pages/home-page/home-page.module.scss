@@ -100,7 +100,7 @@ p {
   text-decoration: none;
 }
 
-//TEACHER IMAGES
+// TEACHER IMAGES
 .teacherContainer {
   position: relative;
   text-align: center;
@@ -146,35 +146,68 @@ p {
   clip-path: polygon(50% 8%, 100% 0, 100% 100%, 50% 92%, 0 100%, 0 0);
 }
 
-//TEACHER TRAINING ADVISER
+// TEACHER TRAINING ADVISER
 #teacherTrainingContainer {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 380px;
   width: 100%;
 }
 
-#teacherTrainingHeadingContainer {
+.teacherTrainingHeadingContainer {
   position: absolute;
   background-color: $git-purple;
-  transform: rotate(5deg);
-  padding-left: 8%;
-  padding-right: 12%;
-  left: -15px;
+  padding-left: 10%;
+  left: -20px;
   z-index: 1;
-  top: 20%;
-  font-size: 2em;
+  top: 50%;
+  transform: translateY(-50%) rotate(5deg);
+  font-size: 2.4vw;
+  right: 110px;
 }
 
 #teacherTrainingAdviserImage {
   position: absolute;
-  right: 0%;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 2;
   height: 100%;
 }
 
-//SIGN UP FOR AN ADVISER
+@media screen and (min-width: $max-width) {
+  .teacherTrainingHeadingContainer {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: $size-medium) {
+  #teacherTrainingContainer {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: $size-small) {
+  #teacherTrainingContainer {
+    height: 300px;
+  }
+
+  #teacherTrainingHeadingContainerLarge {
+    display: none;
+  }
+
+  #teacherTrainingHeadingContainerSmall {
+    font-size: 2.8vw;
+    padding-left: 15%;
+  }
+}
+
+@media only screen and (min-width: $size-small) {
+  #teacherTrainingHeadingContainerSmall {
+    display: none;
+  }
+}
+
+// SIGN UP FOR AN ADVISER
 #signUpAdviserContainer {
   background-color: $git-yellow;
   display: flex;
@@ -215,7 +248,7 @@ p {
   }
 }
 
-//ABIGAIL TEACHER
+// ABIGAIL TEACHER
 #abigailTeacherContainer {
   background: linear-gradient(to bottom, $git-yellow 50%, transparent 50%);
 }

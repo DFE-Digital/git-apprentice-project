@@ -83,12 +83,29 @@ export default () => (
       </div>
     </div>
     <div id={styles.teacherTrainingContainer}>
-      <div id={styles.teacherTrainingHeadingContainer}>
+      <div
+        className={styles.teacherTrainingHeadingContainer}
+        id={styles.teacherTrainingHeadingContainerLarge}
+      >
         <StyledHeading
           to="/life-as-a-teacher/stories/"
           textAndBackground={[
             { text: "Get advice from a teacher" },
             { text: "training adviser" },
+          ]}
+        />
+      </div>
+      <div
+        className={styles.teacherTrainingHeadingContainer}
+        id={styles.teacherTrainingHeadingContainerSmall}
+      >
+        <StyledHeading
+          to="/life-as-a-teacher/stories/"
+          textAndBackground={[
+            { text: "Get advice" },
+            { text: "from a teacher" },
+            { text: "training" },
+            { text: "adviser" },
           ]}
         />
       </div>
