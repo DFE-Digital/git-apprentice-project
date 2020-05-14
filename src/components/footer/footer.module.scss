@@ -1,8 +1,24 @@
 @import "../../utils/constants.scss";
 
 #background {
-  background-color: $git-black;
+  //background-color: $git-black;
   max-width: $max-width;
   height: 250px;
   margin: auto;
+  float: right;
+}
+
+#dfeLogo {
+  height: 100px;
+  width: 300px;
+}
+
+.socialMediaIcons {
+  height: 30px;
+  width: 30px;
+}
+
+#socialMediaIconsContainer {
+  //float: right;
+  list-style: none;
 }
