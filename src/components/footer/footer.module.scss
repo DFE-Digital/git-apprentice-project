@@ -1,0 +1,8 @@
+@import "../../utils/constants.scss";
+
+#background {
+  background-color: green;
+  max-width: $max-width;
+  height: 250px;
+  margin: auto;
+}
