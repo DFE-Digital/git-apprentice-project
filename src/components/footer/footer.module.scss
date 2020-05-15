@@ -1,8 +1,36 @@
 @import "../../utils/constants.scss";
 
 #background {
-  background-color: green;
+  background-color: $git-black;
   max-width: $max-width;
-  height: 250px;
+  height: 350px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#dfeLogo {
+  height: 115px;
+  width: 335px;
+
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.socialMediaIcons {
+  height: 47px;
+  width: 47px;
+  padding-right: 13px;
+}
+
+#socialMediaIconsContainer {
+  list-style: none;
+  padding-right: 60px;
+}
+
+ul,
+li {
+  display: inline;
 }
