@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./footer.module.scss";
-import dfeLogo from "../../pages/home-page/images/dfeLogo.png";
-import fbLogo from "../../pages/home-page/images/fbLogo.png";
-import instaLogo from "../../pages/home-page/images/instaLogo.png";
-import linkedinLogo from "../../pages/home-page/images/linkedinLogo.png";
-import twitterLogo from "../../pages/home-page/images/twitterLogo.png";
-import youtubeLogo from "../../pages/home-page/images/youtubeLogo.png";
+import dfeLogo from "./images/dfe-logo.png";
+import fbLogo from "./images/fb-logo.png";
+import instaLogo from "./images/insta-logo.png";
+import linkedinLogo from "./images/linkedin-logo.png";
+import twitterLogo from "./images/twitter-logo.png";
+import youtubeLogo from "./images/youtube-logo.png";
 
 const Footer = props => {
   return (
@@ -57,7 +57,11 @@ const Footer = props => {
           </a>
         </li>
       </ul>
-      <img src={dfeLogo} id={styles.dfeLogo} />
+      <img
+        src={dfeLogo}
+        id={styles.dfeLogo}
+        alt="Department for Education Logo"
+      />
     </div>
   );
 };
