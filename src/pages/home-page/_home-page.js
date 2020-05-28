@@ -13,7 +13,7 @@ import abigailTeacher from "./images/abigail-teacher.jpg";
 import abigailTeacherSmall from "./images/abigail-teacher-small.jpg";
 import teacherTraining from "./images/teacher-training-adviser.png";
 import manchesterMap from "./images/manchester-map.png";
-import Layout from "../../components/layout";
+import Layout from "../../components/layout/layout";
 
 export default () => (
   <Layout>
