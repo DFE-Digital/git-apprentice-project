@@ -6,10 +6,10 @@ const StyledHeading = props => {
   const { to, textAndBackground, rotation, paddingLeft } = props;
 
   return (
-    <div id={styles.containerHeading}>
-      <Link id={styles.anchorHeading} to={to}>
+    <div className={styles.containerHeading}>
+      <Link className={styles.anchorHeading} to={to}>
         <h1
-          id={styles.heading}
+          className={styles.heading}
           style={{
             transform: `rotate(${rotation}deg)`,
             msTransform: `rotate(${rotation}deg)`,
@@ -19,7 +19,7 @@ const StyledHeading = props => {
             <div key={index}>
               <span
                 style={{ backgroundColor: line.color, paddingLeft }}
-                id={styles.textContainerHeading}
+                className={styles.textContainerHeading}
               >
                 <span className={styles.textHeading}>{line.text}</span>
               </span>

@@ -18,33 +18,39 @@ import Layout from "../../components/layout/layout";
 export default () => (
   <Layout>
     <div className={styles.container}>
-      <div id={styles.inspireImageLargeContainer}>
+      <div className={styles.inspireImageLargeContainer}>
         {/* TODO: Replace image with text once we have got stock image background? */}
-        <Link id={styles.anchorLifeAsATeacher} to="/life-as-a-teacher/" />
+        <Link
+          className={styles.anchorLifeAsATeacher}
+          to="/life-as-a-teacher/"
+        />
         <img
           src={inspireTheNextGeneration}
           alt="Inspire the next generation"
-          id={styles.inspireImageLarge}
+          className={styles.inspireImageLarge}
         />
       </div>
-      <div id={styles.inspireImageSmallContainer}>
-        <Link to="/life-as-a-teacher/" id={styles.anchorLifeAsATeacherSmall}>
+      <div className={styles.inspireImageSmallContainer}>
+        <Link
+          to="/life-as-a-teacher/"
+          className={styles.anchorLifeAsATeacherSmall}
+        >
           <img
             src={inspireTheNextGenerationSmall}
             alt="Inspire the next generation"
           />
         </Link>
       </div>
-      <div id={styles.howIBecameATeacherContainer}>
-        <div id={styles.howIBecameATeacherVideoContainer}>
+      <div className={styles.howIBecameATeacherContainer}>
+        <div className={styles.howIBecameATeacherVideoContainer}>
           <Video
-            id={styles.howIBecameATeacherVideo}
+            className={styles.howIBecameATeacherVideo}
             videoSrcURL="https://youtube.com/embed/aGd_Rrs-qNY"
             videoTitle="Theo English teacher"
           />
         </div>
-        <div id={styles.howIBecameATeacherTextContainer}>
-          <div id={styles.howIBecameATeacherHeadingContainer}>
+        <div className={styles.howIBecameATeacherTextContainer}>
+          <div className={styles.howIBecameATeacherHeadingContainer}>
             <StyledHeading
               to="/life-as-a-teacher/stories/"
               textAndBackground={[
@@ -61,7 +67,7 @@ export default () => (
           </h3>
           <Link
             to="/life-as-a-teacher/stories/"
-            id={styles.howIBecameATeacherAnchor}
+            className={styles.howIBecameATeacherAnchor}
           >
             <h3 className={styles.howIBecameATeacherText}>
               View more stories&nbsp;&nbsp;&nbsp;&nbsp;>
