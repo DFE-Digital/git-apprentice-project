@@ -1,9 +1,9 @@
 @import "../../utils/constants.scss";
 
-#styledButton {
+.styledButton {
   color: $git-white;
   font-family: $akzidenz-grotesk;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   font-size: 1.3em;
   border: 0;
   box-shadow: none;
@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: $size-small) {
-  #styledButton {
+  .styledButton {
     font-size: 1em;
   }
 }

@@ -33,26 +33,26 @@ h3 {
 }
 
 // INSPIRE THE NEXT GENERATION IMAGE
-#inspireImageLarge {
+.inspireImageLarge {
   width: 100%;
   display: block;
 }
 
-#inspireImageSmallContainer {
+.inspireImageSmallContainer {
   display: flex;
   margin: auto;
 }
 
-#anchorLifeAsATeacherSmall {
+.anchorLifeAsATeacherSmall {
   margin: auto;
 }
 
-#inspireImageLargeContainer {
+.inspireImageLargeContainer {
   position: relative;
   padding-bottom: $border-width;
 }
 
-#anchorLifeAsATeacher {
+.anchorLifeAsATeacher {
   height: 50%;
   width: 50%;
   position: absolute;
@@ -61,24 +61,24 @@ h3 {
 }
 
 @media only screen and (max-width: $size-small) {
-  #inspireImageLargeContainer {
+  .inspireImageLargeContainer {
     display: none;
   }
 }
 
 @media only screen and (min-width: $size-small) {
-  #inspireImageSmallContainer {
+  .inspireImageSmallContainer {
     display: none;
   }
 }
 
 // HOW I BECAME A TEACHER
-#howIBecameATeacherContainer {
+.howIBecameATeacherContainer {
   background-color: $git-black;
   display: flex;
 }
 
-#howIBecameATeacherVideoContainer {
+.howIBecameATeacherVideoContainer {
   display: inline-block;
   height: 400px;
   width: 52%;
@@ -88,14 +88,14 @@ h3 {
   z-index: 1;
 }
 
-#howIBecameATeacherTextContainer {
+.howIBecameATeacherTextContainer {
   padding: 45px 40px 45px 40px;
   z-index: 0;
   position: relative;
   width: 35%;
 }
 
-#howIBecameATeacherHeadingContainer {
+.howIBecameATeacherHeadingContainer {
   left: -2px;
   position: absolute;
   font-size: $large-heading-font-size;
@@ -108,7 +108,7 @@ h3 {
   font-weight: normal;
 }
 
-#howIBecameATeacherAnchor {
+.howIBecameATeacherAnchor {
   text-decoration: none;
   position: absolute;
   bottom: 7px;
@@ -123,16 +123,16 @@ h3 {
 }
 
 @media only screen and (max-width: $size-medium) {
-  #howIBecameATeacherTextContainer {
+  .howIBecameATeacherTextContainer {
     padding-left: 10px;
   }
 
-  #howIBecameATeacherHeadingContainer {
+  .howIBecameATeacherHeadingContainer {
     left: -20px;
     padding-top: 10px;
   }
 
-  #howIBecameATeacherVideoContainer {
+  .howIBecameATeacherVideoContainer {
     padding-left: 25px;
   }
 

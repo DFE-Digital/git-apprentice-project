@@ -1,36 +1,117 @@
 @import "../../utils/constants.scss";
 
-#background {
-  background-color: $git-black;
-  max-width: $max-width;
-  height: 350px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#dfeLogo {
-  height: 115px;
-  width: 335px;
-
-  padding-right: 40px;
-  padding-top: 20px;
-}
-
-.socialMediaIcons {
-  height: 47px;
-  width: 47px;
-  padding-right: 13px;
-}
-
-#socialMediaIconsContainer {
-  list-style: none;
-  padding-right: 60px;
-}
+$dfe-logo-width: 120px;
+$medium-screen-footer-padding: 10px;
 
 ul,
 li {
   display: inline;
+  padding: 0; // remove default broswer padding
+}
+
+.footer {
+  background-color: $git-black;
+  max-width: $max-width;
+  height: 350px;
+  margin: auto;
+}
+
+.container {
+  padding: 0rem 3rem;
+}
+
+.socialWrapper {
+  padding-top: 50px;
+  width: 50%;
+  text-align: right;
+  margin-left: auto;
+}
+
+.copyright {
+  display: inline-block;
+  text-align: right;
+  top: 10px;
+  line-height: 3rem;
+}
+
+.copyright a {
+  color: $git-white;
+  font-family: $akzidenz-grotesk;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footerLogo {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 54px;
+  text-align: right;
+}
+
+.dfeLogo {
+  width: $dfe-logo-width;
+  height: auto;
+}
+
+.social {
+  width: 100%;
+}
+
+.socialMediaIconsList img {
+  height: 50px;
+  width: 50px;
+}
+
+.socialMediaIconsList li {
+  padding-left: 12px;
+}
+
+@media screen and (max-width: $size-medium) {
+  .container {
+    padding: 0 $medium-screen-footer-padding;
+  }
+
+  .socialWrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socialMediaIconsList {
+    display: block;
+  }
+
+  .socialMediaIconsList :first-child {
+    padding: 0;
+  }
+
+  .copyright {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .footerLogo {
+    width: calc(50% - 10px);
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: $size-extra-small) {
+  .socialMediaIconsList {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    width: calc(
+      100% - #{($dfe-logo-width + ($medium-screen-footer-padding * 2))}
+    );
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .footerLogo {
+    width: $dfe-logo-width;
+    margin-left: 10px;
+  }
 }

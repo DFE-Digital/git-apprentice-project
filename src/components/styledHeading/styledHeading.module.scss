@@ -3,22 +3,22 @@
 $vert-spacing: 9px;
 $horiz-spacing: 25px;
 
-#containerHeading {
+.containerHeading {
   display: inline-flex;
 }
 
-#anchorHeading {
+.anchorHeading {
   text-decoration: none;
 }
 
-#heading {
+.heading {
   font-family: $akzidenz-grotesk;
   color: $git-white;
   white-space: nowrap;
   overflow: hidden;
 }
 
-#textContainerHeading {
+.textContainerHeading {
   padding: $vert-spacing $horiz-spacing $vert-spacing $horiz-spacing;
 }
 
