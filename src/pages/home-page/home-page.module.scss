@@ -361,7 +361,7 @@ h3 {
 @media screen and (min-width: $max-width) {
   // Must be here becuase of CSS precedence
   .teacherTrainingHeadingContainer,
-  #howIBecameATeacherHeadingContainer,
+  .howIBecameATeacherHeadingContainer,
   #findAnEventNearYouBackground {
     font-size: 2em;
   }
