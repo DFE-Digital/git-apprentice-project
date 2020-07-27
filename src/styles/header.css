@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.headerContainer {
+    display: flexbox;
+}

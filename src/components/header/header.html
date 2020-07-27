@@ -1,0 +1,55 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/src/styles/header.css"/>
+    </head>
+    <body>
+        <nav role="navigation">
+            <div class="navbar">
+                <div class="logo"> 
+                    <div class="logo__image">
+                        <a href="/">
+                            <img src="" alt="Get into teaching" />
+                            <div class="">Every Lesson shapes a life.</div>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- DESKTOP VIEW-->
+                <div class="navbar__desktop">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Funding your training</a></li>
+                        <li><a href="">Steps to become a teacher</a></li>
+                        <li><a href="">Teaching as a career</a></li>
+                        <li><a href="">Salaries and Benefits</a></li>
+                        <li><a href="">"Find an event near you"</a></li>
+                    </ul>
+                </div>
+                <!-- END OF DESKTOP VIEW-->
+        
+                <!-- MOBILE VIEW -->
+                <div class="navbar__mobile" data-controller="navigation">
+                    <div class="navbar__mobile__buttons">
+                        <a data-action="click->navigation#navToggle" href="#" onclick="return false;" class="icon">
+                            <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
+                            <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
+                        </a>
+                    </div>
+                    <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                            <li><a href="/funding-your-training/index">Funding your training</a></li>
+                            <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                            <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                            <li><a href="">Find an event near you</a></li>
+                            <li><a href="/">Talk to us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END OF MOBILE VIEW -->
+            </div>
+        </nav>
+    </body>
+</html>
