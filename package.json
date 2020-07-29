@@ -1,0 +1,23 @@
+{
+  "name": "git-apprentice-project",
+  "version": "1.0.0",
+  "description": "Simple project starter for Apprentices\r Test",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "postcss src/css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFE-Digital/git-apprentice-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DFE-Digital/git-apprentice-project/issues"
+  },
+  "homepage": "https://github.com/DFE-Digital/git-apprentice-project#readme",
+  "dependencies": {
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.0"
+  }
+}
