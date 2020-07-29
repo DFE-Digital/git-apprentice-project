@@ -2,15 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/src/styles/header.css"/>
+        <link rel="stylesheet" type="text/css" href="/src/styles/tailwind.css"/>
+        <link rel="stylesheet" type="text/css" href="/src/styles/styles.css"/>
     </head>
     <body>
+    <header>
+
+        <h1>Hello World</h1>
         <nav role="navigation">
             <div class="navbar">
-                <div class="logo"> 
+                <div class="logo bg-black"> 
                     <div class="logo__image">
                         <a href="/">
                             <img src="" alt="Get into teaching" />
-                            <div class="">Every Lesson shapes a life.</div>
+                            <div>Every Lesson shapes a life.</div>
                         </a>
                     </div>
                 </div>
@@ -23,12 +28,15 @@
                         <li><a href="">Steps to become a teacher</a></li>
                         <li><a href="">Teaching as a career</a></li>
                         <li><a href="">Salaries and Benefits</a></li>
-                        <li><a href="">"Find an event near you"</a></li>
+                        <li><a href="">Find an event near you</a></li>
                     </ul>
                 </div>
                 <!-- END OF DESKTOP VIEW-->
         
-                <!-- MOBILE VIEW -->
+
+                <!-- 
+                MOBILE VIEW 
+
                 <div class="navbar__mobile" data-controller="navigation">
                     <div class="navbar__mobile__buttons">
                         <a data-action="click->navigation#navToggle" href="#" onclick="return false;" class="icon">
@@ -48,8 +56,12 @@
                         </ul>
                     </div>
                 </div>
-                <!-- END OF MOBILE VIEW -->
+                
+                END OF MOBILE VIEW 
+                -->
+            
             </div>
         </nav>
+        </header>
     </body>
 </html>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'akzidenzgrotesk-bold';
+    src: url('/src/fonts/akzidenzgrotesk-bold/AkzidenzGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'akzidenzgrotesk-roman';
+    src: url('/src/fonts/akzidenzgrotesk-roman/AkzidenzGrotesk-Roman.ttf');
+}
+
+h1 {
+ font-family: 'akzidenzgrotesk-bold';
+}

@@ -1,14 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.navbar {
+ background-color: blue;
+}
+
+.navbar__desktop {
+
 }
 
 .logo {
-    width: 10%;
-    height: 10%;
+
 }
 
-.headerContainer {
-    display: flexbox;
+.logo__image {
+
 }
