@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DFE-Digital/git-apprentice-project#readme",
   "dependencies": {
+    "autoprefixer": "^9.8.5",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.6.0"
   }
