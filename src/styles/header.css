@@ -8,38 +8,59 @@
 nav {
     height: 10vh;
     width: 100vw;
-}
 
-.navbar {
     display: grid;
 }
 
 ul {
     display: grid;
-    grid-template-columns: .5fr repeat(6, 1fr) .5fr;
-    grid-template-rows: 2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(6, 1fr);
 
     justify-content: center;
     justify-items: center;
-    width: 100%;
-    font-family: 'ArialMT', 'Arial', sans-serif;
-    font-weight: 400;
-    line-height: normal;
     text-align: center;
+
     text-decoration: none;
-    text-transform: none;
     list-style: none;
-    vertical-align: none;
 }
 
+.logo {
+    grid-row: 1 / 2;
+    grid-column: 1;
+}
+
+.li_1 {
+    grid-row-start: 2;
+    grid-column: 2;
+}
+
+.li_2 {
+    grid-row-start: 2;
+    grid-column: 3;
+}
+
+.li_3 {
+    grid-row-start: 2;
+    grid-column: 4;
+}
+
+.li_4 {
+    grid-row-start: 2;
+    grid-column: 5;
+}
+
+.li_5 {
+    grid-row-start: 2;
+    grid-column: 6;
+
+}
 .navButton {
     color: #fff;
-    background-color: #1d70b8;
-    width: 20%;
-    padding: 10px;
-    position: fixed;
-    right: 0;
-    top: 0;
+    background-color: #0d78bb;
+    padding: 10px 20px;
+
+    grid-row-start: 1;
+    grid-column: 6;
+
+    justify-content: center;
 }
