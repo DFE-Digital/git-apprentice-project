@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link href="build/tailwind.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1356c0f4d2.js" crossorigin="anonymous"></script>
     <script src="src/fonts/akzidenzgrotesk-roman"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Get into teaching</title> 
-
+</head>
 
     <!-- The footer later needs to be fixed relative to the bottom. Using black colour on the body so can check the white font etc. Footer will be merged into index.html -->
 <body class="bg-black"> 
@@ -18,28 +19,32 @@
 <!-- Top footer -->
             <div class="footer-top">
                 <div class="links-container">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube fa-3x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
+                    <!-- Social icons -->
+                    <ul class="flex justify-evenly items-center py-6 px-5 text-white-300">
+                        <li><a href="https://www.facebook.com/getintoteaching/" class="text-white text-lg"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                        <li><a href="https://www.instagram.com/get_into_teaching/?hl=en"class="inline-block text-lg text-white"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/get-into-teaching" class="inline-block text-lg text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/getintoteaching" class="inline-block text-lg text-white"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        <li><a href="https://twitter.com/getintoteaching" class="inline-block text-lg text-white"><i class="fab fa-twitter fa-2x"></i></a></li>
                     </ul>
                 </div>
             </div>
 
 <!-- Bottom footer -->
-            <div class="footer-bottom">
+
+            <!-- <div class="flex content-center h-48 px-32 align-bottom"> -->
+               <div class="flex items-center py-6">
+                "
                 <!-- Left bottom box -->
-                <div class="left-box-bottom">
-                    <h2> &copy; Crown Copyright </h2>
+                <div class="w-1/2 px-16">
+                    <h2 class="mb-0 text-2xl font-hairline text-white"> &copy; Crown Copyright </h2>
                 </div>
 
                 <!-- Right bottom box -->
-                <div class="right-box-bottom">
+                <div class="w-1/2">
                     <!-- DfE Logo -->
-                    <div class="p-16">
-                        <img src="img/dfe-footer-logo.png" alt="Department for Education">
+                    <div class="px-16">
+                        <img class="h-24" src="img/dfe-footer-logo.png" alt="Department for Education">
                     </div>
                 </div>
             </div>
