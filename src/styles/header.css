@@ -24,8 +24,9 @@ ul {
     list-style: none;
 }
 
-.logo {
-    grid-row: 1 / 2;
+img {
+    grid-row: span 2;
+   
     grid-column: 1;
 }
 
@@ -62,5 +63,8 @@ ul {
     grid-row-start: 1;
     grid-column: 6;
 
+    height: 30%;
+    text-align: center;
+    justify-items: center;
     justify-content: center;
 }
