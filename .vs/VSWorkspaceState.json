@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\public\\build",
+    "\\src",
+    "\\src\\css"
   ],
+  "SelectedNode": "\\public\\build\\tailwind.config.js",
   "PreviewInSolutionExplorer": false
 }
