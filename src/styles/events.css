@@ -1,4 +1,12 @@
-.top-and-left-50 {
-    top: 50%;
-    left: 50%;
+.input-outline {
+    box-shadow: 0 0 0 3px #000;
+}
+
+:focus.input-outline {
+    box-shadow: 0 0 0 3px #ffdd00;
+}
+
+.fa-search {
+    color: white;
+    background-color: #000;
 }
