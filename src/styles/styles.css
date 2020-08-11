@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'akzidenzgrotesk-bold';
-    src: url('/src/fonts/akzidenzgrotesk-bold/AkzidenzGrotesk-Bold.ttf');
+    src: url('/src/fonts/AkzidenzGrotesk-Bold.ttf');
 
 }
 
 @font-face {
     font-family: 'akzidenzgrotesk-roman';
-    src: url('/src/fonts/akzidenzgrotesk-roman/AkzidenzGrotesk-Roman.ttf');
+    src: url('/src/fonts/AkzidenzGrotesk-Roman.ttf');
     font-weight: 300;
 }
 
