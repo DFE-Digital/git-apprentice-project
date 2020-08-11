@@ -17,3 +17,10 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'akzidenzgrotesk-bold';
 }
+
+.custom-font {
+   font-family: 'akzidenzgrotesk-roman';
+}
+.custom-font-bold {
+    font-family: 'akzidenzgrotesk-bold';
+}
