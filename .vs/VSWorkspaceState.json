@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\build",
+    "\\public\\fonts",
     "\\src",
-    "\\src\\css"
+    "\\src\\css",
+    "\\src\\fonts"
   ],
-  "SelectedNode": "\\public\\find-an-event-near-you.html",
+  "SelectedNode": "\\public\\steps-into-teaching.html",
   "PreviewInSolutionExplorer": false
 }
