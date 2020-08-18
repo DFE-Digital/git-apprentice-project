@@ -24,3 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .custom-font-bold {
     font-family: 'akzidenzgrotesk-bold';
 }
+
+.t-50 {
+    top: 50%;
+}
