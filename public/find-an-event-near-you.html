@@ -47,7 +47,7 @@
         <form class="relative px-6">
             <div class="h-4">
             <input class="outline-none input-outline w-1/5" type="text" />
-            <button class="bg-black p-2 pt-1" type="button" onclick="showEventsOnSearch()" ><i class="fa fa-search"></i></button>
+            <button class="bg-black p-2 pt-1" type="button" onclick="displayEvents()" ><i class="fa fa-search"></i></button>
         </form>
     </div>
 
@@ -90,7 +90,7 @@
 
 
     <script>
-        function showEventsOnSearch() {
+        function displayEvents() {
             var button = document.getElementById("event-card");
                 button.classList.toggle("hidden");
         }
