@@ -2,31 +2,35 @@
 <html>
 
 <head>
-  <link href="build/tailwind.css" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
+    <link href="build/tailwind.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
     </script>
-  <script src="https://kit.fontawesome.com/1356c0f4d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1356c0f4d2.js" crossorigin="anonymous"></script>
 
 
-  <script>
-    $(function () {
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-    });
-  </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-  <div class="flex flex-col h-screen justify-between">
+    <div class="flex flex-col h-screen justify-between">
 
-    <div id="header" class="h-10"></div>
+        <div id="header"></div>
+                    <!--Original div-->
+        <!--<div id="header" class="h-10"></div>-->
+       
+        
     <!-- Need to play around with main class dimensions to ensure doesn't overlap header -->
-    <main class="h-100"> main content</main>
-    <div id="footer" class="w-full h-10"></div>
+        <main class="h-100"> main content</main>
+        <div id="footer" class="w-full h-10"></div>
 
-  </div>
+    </div>
 </body>
 
 </html>
