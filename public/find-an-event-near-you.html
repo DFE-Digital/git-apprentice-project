@@ -19,41 +19,41 @@
 <body>
     <div id="header"></div>
 
-    <div class="relative text-center">
+    <div class="relative text-center pb-3">
         <img class="w-screen" src="img/manchester-map.PNG" alt="map of Manchester" />
         <p class="absolute w-screen t-50 custom-font-bold text-4xl -translate-x-1/2 -translate-y-1/2">
             Find an event near you
         </p>
     </div>
 
-    <span class="px-6 m-6"><a href="../">&lt;  Back</a></span>
+    <span class="font-bold text-black px-6 py-3"><a href="../"><i class="fas fa-angle-left"></i> Back</a></span>
 
     <div class="body-background">
-        <p class="px-6 mb-6 mt-4">Get one to one advice about how you can train</p>
-        <p class="px-6">You'll be able to:</p>
+        <p class="px-6 pt-3 mb-6 mt-4">Get one to one advice about how you can train</p>
+        <p class="px-6 pb-3">You'll be able to:</p>
         <ul class="px-10 list-inside list-disc">
             <li>talk to teachers and students and find out what teaching is really like</li>
             <li>ask about the best way for you to train</li>
             <li>find out how to fund your course</li>
             <li>meet local schools and universities that offer training</li>
         </ul>
-        <p class="px-6">Events are informal and you can drop in at any time.</p>
+        <p class="px-6 py-3">Events are informal and you can drop in at any time.</p>
         <p class="px-6">Check the timetable of the event before you go to make sure you don't miss anything.</p>
     </div>
 
     <div>
-        <h4 class="px-6 font-bold">Search for event near you</h4>
-        <span class="px-6 font-bold">Please enter your postcode</span>
-        <form class="px-6">
+        <h4 class="px-6 py-3">Search for event near you</h4>
+        <span class="px-6 pt-3 font-semibold">Please enter your postcode</span>
+        <form class="relative px-6">
             <div class="h-4">
-            <input class="outline-none input-outline focus-input-outline" type="text" />
-            <button class="p-2 bg-black" type="button" onclick="showEventsOnSearch()" ><i class="h-4 fa fa-search"></i></button>
-            </div>
+            <input class="outline-none input-outline w-1/5" type="text" />
+            <button class="bg-black p-2 pt-1" type="button" onclick="showEventsOnSearch()" ><i class="fa fa-search"></i></button>
         </form>
+    </div>
 
         <div class="max-w-sm rounded overflow-hidden shadow-lg p-3 hidden" id="event-card">
          <img class="w-full object-cover" src="img/manchester-map.PNG" alt="map of manchester" />
-         <div class="relative w-4/5 p-6">
+         <div class="relative w-4/5 py-6 pl-6">
          <select class="block appearance-none w-full border border-black text-black py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-black" id="grid-state">
             <option>This area only</option>
             <option>0 - 10 miles</option>
@@ -65,19 +65,25 @@
             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
           </div>
         </div>
-        <p><i class="fas fa-calendar-alt"></i> Monday 01st January</p>
-        <p><i class="far fa-clock"></i> 6pm - 8pm</p>
-        <p><i class="fas fa-map-marker"></i> M9 6RT 
-            <span class="text-blue-500 underline">
+        <span class="px-2 font-bold">Get into teaching event</span>
+        <p class="px-2 pt-2">
+            <i class="fas fa-calendar-alt"></i> Monday 01st January
+        </p>
+        <p class="px-2">
+            <i class="far fa-clock"></i> 6pm - 8pm
+        </p>
+        <p class="px-2">
+            <i class="fas fa-map-marker"></i> M9 6RT 
+            <span class="pl-3 text-blue-500 underline">
                 <a href="https://www.google.co.uk/maps/">View on Google Maps</a>
             </span>
         </p>
-        <p>This is a little synopsis of the event…Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><a>Reserve a space on EventBrite</a></button>
+        <p class="px-2 pb-4 pt-2">This is a little synopsis of the event…Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+        <button class="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><a>Reserve a space on EventBrite</a></button>
         </div>
     </div>
     <div>
-        <p class="px-6">if you'd like to advertise your teaching event in the listing, please <span class="text-blue-500 underline"><a href="/">fill in our online form</a></span></p>
+        <p class="px-6 py-10">if you'd like to advertise your teaching event in the listing, please <span class="text-blue-500 underline"><a href="/">fill in our online form</a></span></p>
     </div>
 
     <div id="footer"></div>
