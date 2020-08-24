@@ -1,53 +1,42 @@
 <!DOCTYPE HTML5>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/src/styles/header.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/src/styles/tailwind.css" />
     <link rel="stylesheet" type="text/css" href="/src/styles/styles.css" />
     <!--Tailwind Output-->
     <link href="build/tailwind.css" rel="stylesheet" />
 </head>
 <header>
-    <nav class="flex items-center justify-between flex-wrap p-6">
-        <div class="flex items-center flex-shrink-0 text-black mr-6">
-          <span class="font-semibold text-xl tracking-tight custom-font-bold">
-            <a href="/public/index.html">Teaching</a>
-          </span>
+      <div class="flex items-center justify-between text-black px-4 py-3">
+        <a href="/public/index.html">
+          <img class="bg-green-600" src="img/getintoteachinglogo.svg" alt="Get Into Teaching Logo"/>
+        </a>
+        <div>
+          <a class="lg:flex md:flex hidden px-2 py-1 mt-1 custom-font-bold border rounded bg-blue-700 hover:bg-blue-500 text-white hover:text-white-500 border-transparent hover:border-transparent">Join our mailing list</a>
+          <button class="md:hidden lg:hidden p-2 pt-1" type="button" onclick="displayNavMenu()">
+            <i class="fa text-5xl fa-bars"></i>
+          </button>
         </div>
-        <div class="block">
-          <a class="block text-sm px-4 py-2 leading-none border rounded bg-blue-500 custom-font-bold text-white border-transparent hover:border-transparent hover:text-white-500 hover:bg-blue-700 mt-4 lg:mt-0">
-            Join our mailing list
-          </a>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <ul class="flex text-sm lg:flex-grow">
-            <li class="flex-1 sm:flex-col">
-                <a class="block mt-4 mr-4 lg:inline-block lg:mt-0 custom-font-bold text-black hover:text-blue-500">
-                Life as a teacher
-                </a>
-            </li>
-            <li class="flex-1 sm:flex-row">    
-            <a class="block mt-4 mr-4 lg:inline-block lg:mt-0 custom-font-bold text-black hover:text-blue-500">
-                How to become a teacher
-            </a>
-        </li>
-        <li class="flex-1">
-            <a class="block mt-4 mr-4 lg:inline-block lg:mt-0 custom-font-bold text-black hover:text-blue-500">
-                Funding your training
-            </a>
-        </li>
-        <li class="flex-1">
-            <a class="block mt-4 mr-4 lg:inline-block lg:mt-0 custom-font-bold text-black hover:text-blue-500">
-                How to apply
-            </a>
-        </li>
-        <li class="flex-1">
-            <a href="/public/find-an-event-near-you.html" class="block mt-4 mr-4 lg:inline-block lg:mt-0 custom-font-bold text-black hover:text-blue-500">
-                Find an event near you
-            </a>
-        </li>
-          </ul>    
-        </div>
-      </nav>
+      </div>
+        
+      <div id="nav-menu" class="flex flex-col lg:flex-row lg:justify-between md:justify-between sm:flex-col md:flex-row px-2 pt-2 pb-4">
+          <a class="px-2 py-1 custom-font-bold text-black hover:text-blue-500" href="#">Life as a teacher</a>
+          <a class="px-2 py-1 mt-1 custom-font-bold text-black hover:text-blue-500" href="#">How to become a teacher</a>
+          <a class="px-2 py-1 mt-1 custom-font-bold text-black hover:text-blue-500" href="#">Funding your training</a>
+          <a class="px-2 py-1 mt-1 custom-font-bold text-black hover:text-blue-500" href="#">How to apply</a>
+          <a class="px-2 py-1 mt-1 custom-font-bold text-black hover:text-blue-500" href="/public/find-an-event-near-you.html">Find an event near you</a>
+          <a class="px-2 py-1 mt-1 custom-font-bold text-center border rounded bg-blue-700 hover:bg-blue-500 text-white hover:text-white-500 border-transparent hover:border-transparent lg:hidden md:hidden">Join our mailing list</a>
+      </div>
+
 </header>
+
+<script>
+  function displayNavMenu() {
+    var isOpen = false;
+      var button = document.getElementById("nav-menu");
+          button.classList.toggle("hidden");
+  }
+</script>
+
 </html>
