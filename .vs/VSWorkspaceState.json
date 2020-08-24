@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\build",
     "\\public\\fonts",
     "\\src",
     "\\src\\css",
     "\\src\\fonts"
   ],
-  "SelectedNode": "\\public\\steps-into-teaching.html",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
