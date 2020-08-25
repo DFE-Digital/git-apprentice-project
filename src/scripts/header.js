@@ -1,7 +1,9 @@
-// TODO: toggle hamburger icon to a window close icon when navbar is presented on mobile view
 function displayNavLinksOnMobileView() {
       var button = document.getElementById("nav-menu");
           button.classList.toggle("hidden");
+    
+      // TODO: toggle bars icon to window-close icon when nav menu is visible on mobile view 
+      // bars icon visible only when nav menu is not visible
 }
 
   function displayNavMenu(desktopView) {
