@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\build",
-    "\\src\\css",
-    "\\src\\fonts"
+    "\\public\\build"
   ],
-  "SelectedNode": "\\public\\footer.html",
+  "SelectedNode": "\\public\\find-an-event-near-you.html",
   "PreviewInSolutionExplorer": false
 }
