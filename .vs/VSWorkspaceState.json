@@ -3,11 +3,9 @@
     "",
     "\\public",
     "\\public\\build",
-    "\\public\\fonts",
-    "\\src",
     "\\src\\css",
     "\\src\\fonts"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\public\\footer.html",
   "PreviewInSolutionExplorer": false
 }
