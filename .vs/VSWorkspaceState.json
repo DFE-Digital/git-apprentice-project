@@ -3,9 +3,11 @@
     "",
     "\\public",
     "\\public\\build",
+    "\\src",
     "\\src\\css",
-    "\\src\\fonts"
+    "\\src\\fonts",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\public\\footer.html",
+  "SelectedNode": "\\tailwind.config.js",
   "PreviewInSolutionExplorer": false
 }

@@ -4,9 +4,14 @@ module.exports = {
     extend: {},
   },
     variants: {
-        backgroundColor: ['responsive', 'focus', 'hover', 'active'],
-        //accessibility: ['responsive', 'focus', 'hover', 'active']
+        backgroundColor: ['responsive', 'focus', 'hover', 'active', 'visited'],
+        accessibility: ['responsive', 'focus', 'hover', 'active']
 
     },
-  plugins: [],
+    plugins: [],
+    future: {
+        removeDeprecatedGapUtilities: true,
+    }
 }
+
+
