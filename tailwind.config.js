@@ -4,8 +4,8 @@ module.exports = {
     extend: {},
   },
     variants: {
-        backgroundColor: ['active'],
-        accessibility: ['responsive', 'focus', 'hover', 'active']
+        backgroundColor: ['responsive', 'focus', 'hover', 'active'],
+        //accessibility: ['responsive', 'focus', 'hover', 'active']
 
     },
   plugins: [],
