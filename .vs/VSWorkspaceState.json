@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\build"
+    "\\public\\build",
+    "\\src",
+    "\\src\\css",
+    "\\src\\fonts",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\public\\find-an-event-near-you.html",
+  "SelectedNode": "\\tailwind.config.js",
   "PreviewInSolutionExplorer": false
 }
