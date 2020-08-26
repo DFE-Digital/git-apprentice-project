@@ -1,18 +1,20 @@
 function displayNavLinksOnMobileView() {
-      var button = document.getElementById("nav-menu");
-          button.classList.toggle("hidden");
-    
-      // TODO: toggle bars icon to window-close icon when nav menu is visible on mobile view 
-      // bars icon visible only when nav menu is not visible
+  let button = document.getElementById("nav-menu");
+  button.classList.toggle("hidden");
+
+  let toggleIcon = document.getElementById("toggle-nav");
+  toggleIcon.classList.toggle("fa-window-close");
+  toggleIcon.classList.toggle("fa-bars");
 }
 
-  function displayNavMenu(desktopView) {
-    if (desktopView.matches) { // If media query matches
-      var button = document.getElementById("nav-menu");
-        button.classList.remove("hidden");
+function displayNavMenu(desktopView) {
+  if (desktopView.matches) {
+    // If media query matches
+    let button = document.getElementById("nav-menu");
+    button.classList.remove("hidden");
   }
 }
 
-var desktopView = window.matchMedia("(min-width: 768px)");
-displayNavMenu(desktopView); 
+let desktopView = window.matchMedia("(min-width: 768px)");
+displayNavMenu(desktopView);
 desktopView.addListener(displayNavMenu);
