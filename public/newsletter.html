@@ -26,7 +26,7 @@
     <main id="main">
 
         <!-- Background -->
-        <div class="w-full px-6 py-12 text-left bg-gray-300 leading-normal">
+        <div class="w-full px-6 py-12 text-left bg-white leading-normal">
 
             <div class="container max-w-4xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
                 <div class="w-full md:w-1-3">
@@ -49,7 +49,27 @@
                 </div>
             </div>
 
-            <div class="container max-w-4xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+            <div class="flex flex-col">
+                <div class="container bg-blue-400 max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                    <div class="bg-grey-lighter px-6 py-8 rounded text-black w-full">
+                        <input type="text"
+                               class="block border border-grey-light w-full p-3 rounded mb-4"
+                               name="fullname"
+                               placeholder="First Name" />
+
+                        <input type="text"
+                               class="block border border-grey-light w-full p-3 rounded mb-4"
+                               name="fullname"
+                               placeholder="Surname" />
+
+                        <input type="text"
+                               class="block border border-grey-light w-full p-3 rounded mb-4"
+                               name="email"
+                               placeholder="Email" />
+                    </div>
+                </div>
+            </div>
+            <div class="container max-w-4xl mx-auto flex justify-center flex-wrap md:flex-no-wrap p-4">
                 <div class="w-full md:w-1-3">
                     <p class="mb-5 text-xl leading-tight mb-2 focus:border-black"> It's easy to unsubscribe if you change your mind and we'll never share your email address with anyone else. To find out how we handle your personal data, please visit our privacy notice.                    </p>
                 </div>
@@ -57,14 +77,10 @@
             <div class="container max-w-4xl mx-auto flex justify-center items-center content-center">
                 <button target="_blank" href="https://register.getintoteaching.education.gov.uk/register"
                         class="block mb-4 px-4 py-3 rounded-lg bg-orange-700 text-white text-lg
-                                font-medium no-underline px-2 py-2 shadow-lg hover:bg-orange-400 visited:bg-purple-600">
-                    Join
+                                font-medium no-underline px-2 py-2 shadow-lg hover:bg-orange-400 visited:bg-purple-600">Join
                 </button>
             </div>
         </div>
-
-
-
     </main>
     <div id="footer" class="h-5 object-cover w-full"></div>
 
