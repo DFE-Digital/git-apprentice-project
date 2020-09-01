@@ -3,6 +3,8 @@
     "",
     "\\public",
     "\\public\\build",
+    "\\public\\fonts",
+    "\\public\\fonts\\akzidenzgrotesk-roman",
     "\\src",
     "\\src\\css",
     "\\src\\fonts",
