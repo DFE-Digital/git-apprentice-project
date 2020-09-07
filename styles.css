@@ -80,3 +80,19 @@ h6 {
     overflow: visible;
     z-index: -1;
 }
+
+.skew-logo-bg {
+    -moz-transform: skew(5deg, -5deg);
+    -webkit-transform: skew(5deg, -5deg);
+    -o-transform: skew(5deg, -5deg);
+    -ms-transform: skew(5deg, -5deg);
+    transform: skew(5deg, -5deg);
+}
+
+.unskew-logo {
+    -moz-transform: skew(-5deg, 5deg);
+    -webkit-transform: skew(-5deg, 5deg);
+    -o-transform: skew(-5deg, 5deg);
+    -ms-transform: skew(-5deg, 5deg);
+    transform: skew(-5deg, 5deg);
+}
