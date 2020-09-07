@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\build",
-    "\\public\\fonts",
     "\\public\\fonts\\akzidenzgrotesk-roman",
+    "\\public\\img",
     "\\src",
     "\\src\\css",
     "\\src\\fonts",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\public\\steps-into-teaching.html",
+  "SelectedNode": "\\public\\how-to-apply.html",
   "PreviewInSolutionExplorer": false
 }
