@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\fonts\\akzidenzgrotesk-roman",
-    "\\public\\img",
+    "\\public\\build",
     "\\src",
     "\\src\\css",
     "\\src\\fonts",
