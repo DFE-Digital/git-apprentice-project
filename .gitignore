@@ -115,6 +115,9 @@ dist
 !.vscode/extensions.json
 *.code-workspace
 
+### Visual Studio ###
+.vs/
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
